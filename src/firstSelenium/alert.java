@@ -20,6 +20,8 @@ public class alert {
 		driver.findElement(By.id("name")).sendKeys("Sourabh");
 		driver.findElement(By.id("confirmbtn")).click();
 		System.out.println(driver.switchTo().alert().getText());
+		
+		System.out.println("This is an alert message");
 		driver.switchTo().alert().dismiss();
 		driver.close();
 
